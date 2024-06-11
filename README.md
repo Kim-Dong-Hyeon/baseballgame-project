@@ -17,7 +17,7 @@
 - Xcode command line tool 을 이용하여 직접 입력값 받기
     - Xcode상단탭 - File - New - Project - macOS의 Command Line Tool로 프로젝트 생성
 
-![스크린샷 2023-12-01 오전 9.43.50.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/83c75a39-3aba-4ba4-a792-7aefe4b07895/7e189c18-7213-40b3-970b-a247380bd769/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2023-12-01_%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB_9.43.50.png)
+![스크린샷 2023-12-01 오전 9.43.50.png](https://teamsparta.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F83c75a39-3aba-4ba4-a792-7aefe4b07895%2F7e189c18-7213-40b3-970b-a247380bd769%2F%25E1%2584%2589%25E1%2585%25B3%25E1%2584%258F%25E1%2585%25B3%25E1%2584%2585%25E1%2585%25B5%25E1%2586%25AB%25E1%2584%2589%25E1%2585%25A3%25E1%2586%25BA_2023-12-01_%25E1%2584%258B%25E1%2585%25A9%25E1%2584%258C%25E1%2585%25A5%25E1%2586%25AB_9.43.50.png?table=block&id=95cc7dab-7214-4d09-8a92-6d2120c43bf7&spaceId=83c75a39-3aba-4ba4-a792-7aefe4b07895&width=2000&userId=&cache=v2)
 
 ```swift
 // readLine() 함수를 이용하여 유저의 입력값 처리하기
