@@ -17,9 +17,13 @@
 // Lv4
 // 프로그램을 시작할 때 안내문구를 보여주세요
 
+// Lv5
+// 2번 게임 기록 보기의 경우 완료한 게임들에 대해 시도 횟수를 보여줍니다
+
 import Foundation
 
 class BaseballGame {
+    private var recordManager = RecordManager()
     /// start : 프로그램 실행했을때 안내문구에 따른 동작 구현 함수
     func start() {
         while true {
@@ -30,7 +34,7 @@ class BaseballGame {
                 case 1:
                     playGame()
                 case 2:
-                    showRecords()
+                    recordManager.showRecords()
                 case 3:
                     print("숫자 야구 게임을 종료합니다.")
                     return
@@ -56,6 +60,7 @@ class BaseballGame {
         print(answer)
         
         print("\n< 게임을 시작합니다 >")
+        var trialCount = 0
         
         while true {
             // 1. 유저에게 입력값을 받음
@@ -65,11 +70,13 @@ class BaseballGame {
                 continue
             }
             
+            trialCount += 1
             let inputArray = Array(input).compactMap { Int(String($0)) }
             let (sCount, bCount) = checkAnswer(answer, inputArray)
             
             if sCount == 3 {
                 print("정답입니다!\n")
+                recordManager.add(trialCount: trialCount)
                 break
             } else if sCount == 0 && bCount == 0 {
                 print("Nothing\n")
@@ -132,14 +139,5 @@ class BaseballGame {
         }
         
         return answerNumbers
-    }
-    
-    /// showRecords : 게임 기록 보기 구현 함수
-    private func showRecords() {
-        // 게임 기록 보기 기능을 여기에 구현합니다.
-        print("< 게임 기록 보기 >")
-        // 예: 1번째 게임 : 시도 횟수 - 14
-        // 여기에서 게임 기록을 출력합니다.
-        print("기록이 없습니다.\n") // 임시 출력
     }
 }

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		7607C3F02C17E4AE008E74E1 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7607C3EF2C17E4AE008E74E1 /* main.swift */; };
 		7607C3F92C181405008E74E1 /* BaseballGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7607C3F82C181405008E74E1 /* BaseballGame.swift */; };
+		7612A4952C1EB70D00CCA8EC /* RecordManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7612A4942C1EB70D00CCA8EC /* RecordManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,6 +30,7 @@
 		7607C3F62C17E553008E74E1 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		7607C3F72C17E55C008E74E1 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		7607C3F82C181405008E74E1 /* BaseballGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseballGame.swift; sourceTree = "<group>"; };
+		7612A4942C1EB70D00CCA8EC /* RecordManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 			children = (
 				7607C3EF2C17E4AE008E74E1 /* main.swift */,
 				7607C3F82C181405008E74E1 /* BaseballGame.swift */,
+				7612A4942C1EB70D00CCA8EC /* RecordManager.swift */,
 			);
 			path = BaseballGame;
 			sourceTree = "<group>";
@@ -127,6 +130,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7612A4952C1EB70D00CCA8EC /* RecordManager.swift in Sources */,
 				7607C3F02C17E4AE008E74E1 /* main.swift in Sources */,
 				7607C3F92C181405008E74E1 /* BaseballGame.swift in Sources */,
 			);
