@@ -20,6 +20,10 @@
 // Lv5
 // 2번 게임 기록 보기의 경우 완료한 게임들에 대해 시도 횟수를 보여줍니다
 
+// Lv6
+// 3번 종료하기의 경우 프로그램이 종료됩니다
+// 1, 2, 3 이외의 입력값에 대해서는 오류 메시지를 보여주세요
+
 import Foundation
 
 class BaseballGame {
@@ -57,7 +61,7 @@ class BaseballGame {
     private func playGame() {
         let answer = makeAnswer() // 정답을 만드는 함수
         // 정답 출력
-        print(answer)
+//        print(answer)
         
         print("\n< 게임을 시작합니다 >")
         var trialCount = 0
